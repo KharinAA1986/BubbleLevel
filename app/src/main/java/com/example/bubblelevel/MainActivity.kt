@@ -1,16 +1,16 @@
 package com.example.bubblelevel
 
+import android.app.Activity
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: Activity(){
     private val radToDegree = 57.2958f
     lateinit var sManager: SensorManager
     private var magnetic = FloatArray(9)
